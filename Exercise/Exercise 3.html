@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#onoff").click(function(){
+        $("img").fadeToggle(2000);
+    });
+
+    $("#move").click(function(){
+        $("img").slideUp(2000).slideDown(2000);
+    });
+
+    $("#stop").click(function(){
+        $("img").stop();
+    });
+});
+</script>
+</head>
+<body>
+
+<button id="onoff">按我開/關圖片</button><br><br>
+<button id="move">按我移動圖片</button><br><br>
+<button id="stop">按我停止圖片</button><br><br>
+
+<img src="maxresdefault.jpg"  style="width:304px;height:228px;">
+</img>
+
+</body>
+</html>

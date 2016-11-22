@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Exercise 2</title>
+<script src="jquery-3.1.1.min.js">
+</script>
+<script>
+
+$(document).ready(function(){
+$("#one").click(function(){
+$("p:first").hide();
+});
+});
+
+$(document).ready(function(){
+$("#two").click(function(){
+$("#2").hide();
+});
+});
+
+$(document).ready(function(){
+$("#three").click(function(){
+$(".3").hide();
+});
+});
+
+</script>
+</head>
+<body>
+<h2 class = "test">Web Programming</h2>
+<p>Hide Paragraph 1</p>
+<p id = "2">Hide Paragraph 2</p>
+<p class = "3">Hide Paragraph 3</p>
+<button id = "one">Click me 1</button>
+<button id = "two">Click me 2</button>
+<button id = "three">Click me 3</button>
+</body>
+</html>
